@@ -1,0 +1,51 @@
+
+import java.util.Scanner;
+import java.util.*;
+
+public class PracticeAtHome {
+
+     public static void main (String[] args) {
+
+     	Scanner in = new Scanner(System.in);
+        List<String>Student = new ArrayList();
+
+        do{
+            int choice = 0, i = 0, total = 0;
+            boolean Boolean = true;
+            String studentName;
+            System.out.println("[1] ADD STUDENT" + "[2] VIEW STUDENTS"+ "[3] EXIT");
+            System.out.print("ENTER YOUR CHOICE");
+            choice = in.nextInt();
+
+            Scanner s = new Scanner(System.in);
+
+            if(choice == 1){
+                System.out.print("ENTER YOUR NAME: ");
+                studentName = s.nextLine();
+                Student.add(studentName);
+                System.out.println("YOU SUCCESSFULL ADDED: " + studentName);
+            }
+
+            else if (choice == 2){
+                System.out.println(Student);
+            }
+
+            else if (choice == 3){
+                System.out.println("THANK YOU! ");
+                System.exit(total);
+            }
+            else{
+                System.out.println("INVALID CHOICE");
+            }
+        }while(true);
+
+
+
+
+
+
+
+     }
+     }
+
+
